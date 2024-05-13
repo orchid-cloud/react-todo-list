@@ -12,6 +12,14 @@ function App() {
     inputTask.current.value = '';
     setCurrentTask('');
   };
+
+  const deleteTask = (taskToDelete) => {
+    setTodoList(
+      todoList.filter((task) => {
+        return task !== taskToDelete;
+      })
+    );
+  };
   return (
     <div className="App">
       <h1>Todo list</h1>
@@ -28,7 +36,12 @@ function App() {
         <hr />
         <ul>
           {todoList.map((val, key) => {
-            return <li key={key}> {val} </li>;
+            return (
+              <div key={key} id="task">
+                <li> {val} </li>
+                <button onClick={() => deleteTask(val)}>X</button>
+              </div>
+            );
           })}
         </ul>
       </div>
