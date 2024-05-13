@@ -16,5 +16,20 @@ button {
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
   list-style: none;
+  width: 300px;
+  height: 40px;
+  background-color: #00df6c;
+  margin: 10px;
+  padding-block-start: 20px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 24px;
 }
