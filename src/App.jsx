@@ -8,6 +8,7 @@ function App() {
       <div>
         <input type="text" placeholder="Task..." />
         <button>Add task</button>
+        <hr />
       </div>
     </div>
   );
