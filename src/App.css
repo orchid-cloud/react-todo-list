@@ -39,3 +39,20 @@ li {
   flex-direction: row;
   align-items: center;
 }
+
+button {
+  height: 60px;
+  margin: 5px;
+  border: none;
+  background-color: coral;
+  border-radius: 5px;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h2 {
+  font-family: monospace;
+}
